@@ -86,7 +86,6 @@ let nombreProduct= 0;
 let cantidadTotal =1;
 var listaTotal=[];
 listaTotal.push(nombreProduct);
-listaTotal++;
 const addToCart = productId => {
   let product = products[productId];
   granTotal = granTotal+product['price-sale'];
