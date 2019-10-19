@@ -82,10 +82,10 @@ let getProducts = categoria => {
 };
 
 let granTotal = 0;
-let nombreProduct= "nada";
+let nombreProduct= 0;
 let cantidadTotal =1;
 var listaTotal=[];
-listaTotal.push(granTotal);
+listaTotal.push(nombreProduct);
 const addToCart = productId => {
   let product = products[productId];
   granTotal = granTotal+product['price-sale'];
