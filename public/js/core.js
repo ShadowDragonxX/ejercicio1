@@ -92,7 +92,7 @@ const addToCart = productId => {
   nombreProduct=nombreProduct+product['product-name'];
   $('#shopping-cart-items').append(buildProductCard(products[productId]));
   $('#total-price').append(total(granTotal));
-  $('#total-list-items').append(cantidadItems(listaTotal));
+  $('#total-list-items').append(cantidadItems(listaTotal.length));
   $('#shoppingCart').modal('show');
 }
 
