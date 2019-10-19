@@ -51,9 +51,9 @@ const total = granTotal => (
 `
 );
 
-const cantidadItems = sizeTotal =>(
+const cantidadItems = listaTotal =>(
   `
-  <h6>Cantidad de productos: ${sizeTotal}</h6>
+  <h6>Cantidad de productos: ${listaTotal}</h6>
   `
 );
 
@@ -85,15 +85,13 @@ let granTotal = 0;
 let nombreProduct= "nada";
 let cantidadTotal =1;
 var listaTotal=[];
-listaTotal.push(nombreProduct);
-let sizeTotal= listaTotal.length();
 const addToCart = productId => {
   let product = products[productId];
   granTotal = granTotal+product['price-sale'];
   nombreProduct=nombreProduct+product['product-name'];
   $('#shopping-cart-items').append(buildProductCard(products[productId]));
   $('#total-price').append(total(granTotal));
-  $('#total-list-items').append(cantidadItems(sizeTotal));
+  $('#total-list-items').append(cantidadItems(listaTotal));
   $('#shoppingCart').modal('show');
 }
 
