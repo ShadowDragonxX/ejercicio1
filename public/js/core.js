@@ -89,7 +89,7 @@ listaTotal.push(nombreProduct);
 const addToCart = productId => {
   let product = products[productId];
   granTotal = granTotal+product['price-sale'];
-  nombreProduct=nombreProduct+product['#item-products'];
+  nombreProduct=nombreProduct+product['product-name'];
   $('#shopping-cart-items').append(buildProductCard(products[productId]));
   $('#total-price').append(total(granTotal));
   $('#total-list-items').append(cantidadItems(listaTotal.length));
